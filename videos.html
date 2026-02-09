@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Videos — Your Artist Name</title>
+  <meta name="description" content="Music videos by Your Artist Name." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">◼︎</span><span class="brand-name">Your Artist Name</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link active" href="videos.html">Videos</a>
+        <a class="nav-link" href="remixes.html">Remixes</a>
+        <a class="nav-link" href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1>Videos</h1>
+        <p class="muted">Add YouTube/Vimeo embeds for official releases, visualizers, and live sets.</p>
+      </div>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="embed-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Video 1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="card-body">
+            <h3>Video Title 1</h3>
+            <p class="muted">Short blurb. Release date, credits, etc.</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="embed-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/5qap5aO4i9A"
+              title="Video 2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="card-body">
+            <h3>Video Title 2</h3>
+            <p class="muted">Another short blurb.</p>
+          </div>
+        </article>
+
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Your Artist Name.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

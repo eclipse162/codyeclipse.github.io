@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Remixes — Your Artist Name</title>
+  <meta name="description" content="SoundCloud remixes and tracks by Your Artist Name." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">◼︎</span><span class="brand-name">Your Artist Name</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" href="videos.html">Videos</a>
+        <a class="nav-link active" href="remixes.html">Remixes</a>
+        <a class="nav-link" href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1>Remixes</h1>
+        <p class="muted">
+          Replace the SoundCloud track URLs in each embed. You can embed tracks, playlists, or sets.
+        </p>
+      </div>
+
+      <div class="stack">
+        <!-- Remix 1 (track embed) -->
+        <section class="embed-card">
+          <iframe
+            title="SoundCloud track 1"
+            class="soundcloud"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            loading="lazy"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/forss/flickermood&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+          ></iframe>
+          <div class="embed-meta">
+            <h2>Remix Title 1</h2>
+            <p class="muted">Optional notes: BPM, genre, download link, stems, etc.</p>
+          </div>
+        </section>
+
+        <!-- Remix 2 (playlist/set embed example) -->
+        <section class="embed-card">
+          <iframe
+            title="SoundCloud playlist"
+            class="soundcloud"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            loading="lazy"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/forss/sets/soulhack&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+          ></iframe>
+          <div class="embed-meta">
+            <h2>Remix Set / Playlist</h2>
+            <p class="muted">Great for grouping remixes by era or vibe.</p>
+          </div>
+        </section>
+
+        <!-- Optional: embed your full profile “tracks” via a playlist you maintain -->
+      </div>
+
+      <div class="card tip">
+        <h3>How to swap in your SoundCloud links</h3>
+        <ol class="muted">
+          <li>Open a track (or playlist) on SoundCloud.</li>
+          <li>Click <strong>Share</strong> → <strong>Embed</strong> → copy the iframe.</li>
+          <li>Paste/replace the iframe in this page.</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Your Artist Name.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

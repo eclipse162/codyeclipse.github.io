@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Artist Name — Music Videos & Remixes</title>
+  <meta name="description" content="Official site featuring music videos and remixes." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark">◼︎</span>
+        <span class="brand-name">Your Artist Name</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" href="videos.html">Videos</a>
+        <a class="nav-link" href="remixes.html">Remixes</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Music videos & remixes — all in one place.</h1>
+          <p class="muted">
+            Showcase your latest releases, YouTube videos, and SoundCloud remixes with a clean, fast site.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="videos.html">Watch Videos</a>
+            <a class="button button-ghost" href="remixes.html">Listen to Remixes</a>
+          </div>
+
+          <div class="chips">
+            <span class="chip">EDM</span>
+            <span class="chip">Future Bass</span>
+            <span class="chip">Remixes</span>
+            <span class="chip">Originals</span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img class="hero-image" src="assets/img/hero-placeholder.jpg" alt="Artist promo image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Latest video</h2>
+          <a class="text-link" href="videos.html">See all videos →</a>
+        </div>
+
+        <!-- Replace the src with your YouTube embed URL -->
+        <div class="embed-card">
+          <div class="embed-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Latest music video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="embed-meta">
+            <h3>Video Title</h3>
+            <p class="muted">Short description of the video, collaborators, release date, etc.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured remix (SoundCloud)</h2>
+          <a class="text-link" href="remixes.html">See all remixes →</a>
+        </div>
+
+        <!-- Replace the track URL inside the iframe src (see remixes.html for examples) -->
+        <div class="embed-card">
+          <iframe
+            title="SoundCloud player"
+            class="soundcloud"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            loading="lazy"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/forss/flickermood&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+          ></iframe>
+          <div class="embed-meta">
+            <h3>Remix Title</h3>
+            <p class="muted">Add a one-liner about the remix, vibe, or how it was made.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">For collabs, licensing, bookings, or remix requests.</p>
+        </div>
+
+        <div class="card">
+          <!-- Replace with your form provider (Formspree, Basin, Netlify forms, etc.) -->
+          <form class="form" action="#" method="post" onsubmit="return false;">
+            <div class="form-row">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" />
+              </label>
+            </div>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell me about your project…"></textarea>
+            </label>
+            <button class="button" type="submit">Send</button>
+            <p class="muted small">Hook this up to a form service when you’re ready.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Your Artist Name. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#" aria-label="SoundCloud">SoundCloud</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
